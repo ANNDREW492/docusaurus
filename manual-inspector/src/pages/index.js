@@ -1,14 +1,12 @@
-import React from 'react';
-import Layout from '@theme/Layout';
-import styles from './index.module.css';
+import React, { useEffect } from 'react';
+import { useHistory } from '@docusaurus/router';
 
 export default function Home() {
-  return (
-    <Layout>
-      <main className={styles.hero}>
-        <h1>Manual del Inspector de Elementos</h1>
-        <p>Explora las herramientas de desarrollo del navegador</p>
-      </main>
-    </Layout>
-  );
+  const history = useHistory();
+
+  useEffect(() => {
+    history.push('/docs/intro'); // o simplemente '/docs' si querés que se abra el índice principal
+  }, [history]);
+
+  return null; // No muestra nada porque redirige
 }

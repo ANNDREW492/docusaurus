@@ -1,72 +1,37 @@
-// @ts-check
-const { themes } = require('prism-react-renderer');
-
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Manual del Inspector de elemento',
+  title: 'Manual del Inspector de Elementos',
   tagline: 'Domina las herramientas de desarrollo del navegador',
   favicon: 'img/favicon.ico',
 
-  url: 'http://localhost',
-  baseUrl: '/',
+  url: 'http://localhost', // URL base para el sitio
+  baseUrl: '/', // Base URL para el sitio
 
   // Configuración básica
-  organizationName: 'ANNDREW492', // Actualizado con tu usuario
-  projectName: 'proyect_docusaurios', // Actualizado con tu repo
+  organizationName: 'ANNDREW492', // Tu usuario de GitHub
+  projectName: 'proyect_docusaurios', // Nombre de tu repositorio
 
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
-
-  i18n: {
-    defaultLocale: 'es',
-    locales: ['es'],
-  },
-
-  themeConfig: {
-    image: 'img/logo-inspector.svg', // Imagen para redes sociales
-    
-    navbar: {
-      title: 'Manual del Inspector',
-      logo: {
-        alt: 'Logo del Inspector',
-        src: 'img/logo-inspector.svg', // Ruta actualizada a tu nuevo logo
-      },
-      items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'manualSidebar',
-          position: 'left',
-          label: 'Manual',
-        },
-      ],
-    },
-    
-    footer: {
-      style: 'dark',
-      copyright: `Copyright © ${new Date().getFullYear()} - Manual del Inspector.`,
-    },
-    
-    prism: {
-      theme: themes.github,
-      darkTheme: themes.dracula,
-      additionalLanguages: ['javascript', 'html', 'css'],
-    },
-  },
-
+  // Configuración de la barra lateral
   presets: [
     [
       '@docusaurus/preset-classic',
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/ANNDREW492/proyect_docusaurios/tree/main/manual-inspector',
+          sidebarPath: require.resolve('./sidebars.js'), // Ruta al archivo de la barra lateral
+          editUrl: 'https://github.com/ANNDREW492/proyect_docusaurios/tree/main/docs/', // URL para editar documentos
         },
+        blog: false, // Si no estás usando un blog, puedes desactivarlo
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve('./src/css/custom.css'), // Ruta a tu CSS personalizado
         },
       },
     ],
   ],
+
+  // Opciones adicionales
+  onBrokenLinks: 'warn', // Comportamiento al encontrar enlaces rotos
+  onBrokenMarkdownLinks: 'warn', // Comportamiento al encontrar enlaces rotos en Markdown
+  themes: [], // Puedes agregar temas adicionales aquí si es necesario
 };
 
 module.exports = config;
