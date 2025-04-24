@@ -1,5 +1,5 @@
 ---
-id: (tips)4
+id: tips4
 title: Editar texto temporalmente en cualquier página
 ---
 

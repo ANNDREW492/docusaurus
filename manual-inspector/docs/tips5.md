@@ -1,5 +1,5 @@
 ---
-id: (tips)5
+id: tips5
 title: Extraer paletas de color
 ---
 

@@ -1,5 +1,5 @@
 ---
-id: (tips)3
+id: tips3
 title: Simular dispositivos móviles
 ---
 

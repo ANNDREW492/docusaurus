@@ -1,5 +1,5 @@
 ---
-id: (tips)1
+id: tips1
 title: Cómo descargar videos con el Inspector
 ---
 

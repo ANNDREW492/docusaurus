@@ -1,5 +1,5 @@
 ---
-id: (tips)2
+id: tips2
 title: Capturas de pantalla de página completa
 ---
 
