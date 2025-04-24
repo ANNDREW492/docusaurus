@@ -1,93 +1,94 @@
-import {themes as prismThemes} from 'prism-react-renderer';
+// @ts-check
+const { themes } = require('prism-react-renderer');
+
+// Configuración adaptable para local y producción
+const isLocal = process.env.NODE_ENV !== 'production';
+const siteUrl = isLocal ? 'http://localhost' : 'https://tudominio.com';
+const baseUrl = isLocal ? '/' : '/docusaurus/'; // Ajusta '/docusaurus/' según tu subdirectorio en cPanel
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Manual del Inspector de Elementos', // Cambiado
-  tagline: 'Domina las herramientas de desarrollo del navegador', // Cambiado
+  title: 'Manual del Inspector de elemento',
+  tagline: 'Domina las herramientas de desarrollo del navegador',
   favicon: 'img/favicon.ico',
 
-  // Configuración de URL (ajusta según tu dominio)
-  url: 'https://tudominio.com',
-  baseUrl: '/docusaurus/', // Asegúrate del slash final
+  // Configuración dinámica de URL
+  url: siteUrl,
+  baseUrl: baseUrl,
 
-  // Elimina las configuraciones de GitHub Pages si no las usas
-  onBrokenLinks: 'throw',
+  // Configuración básica
+  organizationName: 'ANNDREW492', // Actualizado con tu usuario GitHub
+  projectName: 'proyect_docusaurios', // Actualizado con tu repo
+
+  onBrokenLinks: isLocal ? 'warn' : 'throw', // Más estricto en producción
   onBrokenMarkdownLinks: 'warn',
 
   i18n: {
-    defaultLocale: 'es', // Cambiado a español
+    defaultLocale: 'es',
     locales: ['es'],
   },
 
-  presets: [
-    [
-      'classic',
-      {
-        docs: {
-          sidebarPath: './sidebars.js',
-          // Elimina editUrl si no quieres enlaces de "editar esta página"
-        },
-        blog: false, // Desactiva el blog si no lo usas
-        theme: {
-          customCss: './src/css/custom.css',
-        },
-      },
-    ],
-  ],
-
   themeConfig: {
-    image: 'img/inspector-social-card.jpg', // Cambia por tu imagen
     navbar: {
-      title: 'Inspector de Elementos', // Cambiado
+      title: 'Manual del Inspector',
       logo: {
         alt: 'Logo del Inspector',
-        src: 'img/logo-inspector.svg', // Cambia por tu logo
+        src: 'img/logo.svg',
       },
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'manualSidebar', // ¡Actualizado para coincidir con sidebars.js!
+          sidebarId: 'manualSidebar',
           position: 'left',
           label: 'Manual',
         },
-        // Elimina el ítem del blog si no lo usas
+        // Opcional: añadir enlace a GitHub
         {
-          href: 'https://github.com/tu-usuario/tu-repositorio',
-          label: 'GitHub',
+          href: 'https://github.com/ANNDREW492/proyect_docusaurios',
           position: 'right',
+          className: 'header-github-link',
+          'aria-label': 'GitHub repository',
         },
       ],
     },
     footer: {
       style: 'dark',
-      links: [
-        {
-          title: 'Recursos',
-          items: [
-            {
-              label: 'Chrome DevTools Docs',
-              href: 'https://developer.chrome.com/docs/devtools/',
-            },
-          ],
-        },
-        {
-          title: 'Comunidad',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/devtools',
-            },
-          ],
-        },
-      ],
       copyright: `Copyright © ${new Date().getFullYear()} - Manual del Inspector.`,
     },
     prism: {
-      theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
-      additionalLanguages: ['javascript', 'html', 'css'], // Añade lenguajes relevantes
+      theme: themes.github,
+      darkTheme: themes.dracula,
+      additionalLanguages: ['javascript', 'html', 'css'],
     },
   },
+
+  presets: [
+    [
+      '@docusaurus/preset-classic',
+      {
+        docs: {
+          sidebarPath: require.resolve('./sidebars.js'),
+          editUrl: 'https://github.com/ANNDREW492/proyect_docusaurios/tree/main/manual-inspector',
+        },
+        theme: {
+          customCss: require.resolve('./src/css/custom.css'),
+        },
+      },
+    ],
+  ],
+
+  // Configuración adicional para producción (opcional)
+  ...(!isLocal && {
+    plugins: [
+      [
+        '@docusaurus/plugin-sitemap',
+        {
+          changefreq: 'weekly',
+          priority: 0.5,
+        },
+      ],
+    ],
+  }),
 };
 
-export default config;
+module.exports = config;

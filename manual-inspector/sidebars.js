@@ -1,26 +1,20 @@
-const sidebars = {
-  // Eliminamos la generación automática y definimos manualmente:
+module.exports = {
   manualSidebar: [
     {
       type: 'doc',
-      id: 'intro',          // Enlaza a intro.md (¡sin extensión!)
-      label: 'Inicio',      // Texto que aparecerá en el menú
+      id: 'intro',
+      label: 'Inicio',
+      className: 'fa fa-home' // Icono opcional
     },
     {
       type: 'category',
-      label: 'Guía Práctica',  // Título de la categoría
+      label: 'Guía',
       items: [
         'conceptos-basicos',
         'inspeccionar-elementos',
         'debug-css',
+        'trucos-avanzados'
       ],
-    },
-    {
-      type: 'doc',
-      id: 'trucos-avanzados',
-      label: 'Trucos Avanzados', 
     },
   ],
 };
-
-export default sidebars;

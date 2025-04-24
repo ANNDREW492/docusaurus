@@ -1,14 +1,19 @@
 ---
 title: "Conceptos Básicos"
-sidebar_label: "Fundamentos"  # Nombre en el menú lateral
+sidebar_label: "Fundamentos"
 ---
 
 ## ¿Qué es el Inspector de Elementos?
-Herramienta integrada en navegadores para:
-- Ver y editar HTML/CSS en tiempo real.
-- Depurar JavaScript.
-- Analizar rendimiento.
 
-## Acceso rápido
-- **Chrome/Edge**: `F12` o `Ctrl + Shift + I`.
-- **Firefox**: `Ctrl + Shift + C`.
+Herramienta integrada en navegadores (Chrome, Firefox, Edge) para:
+- Analizar el **DOM** (Estructura HTML).
+- Visualizar y modificar **CSS**.
+- Depurar **JavaScript**.
+
+### 🖱️ ¿Cómo abrirlo?
+- **Atajos de teclado**:
+  - `Ctrl + Shift + I` (Windows/Linux).
+  - `Cmd + Opt + I` (Mac).
+- **Clic derecho** → "Inspeccionar" en cualquier elemento.
+
+![Abrir Inspector](img/abrir-inspector.png)
