@@ -1,7 +1,8 @@
 # Website
 
 Este proyecto es acerca de la creación de un manual del inspector de navegador usando [Docusaurus](https://docusaurus.io/)
-el link del manual es:
+el link del manual es: 
+https://ANNDREW492.github.io/proyect_docusaurios/
 
 ### Installation
 
