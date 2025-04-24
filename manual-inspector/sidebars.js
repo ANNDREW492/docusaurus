@@ -12,7 +12,7 @@ module.exports = {
       items: [
         'conceptos-basicos',
         'inspeccionar-elementos',
-        'debug-css',
+        'Depurar CSS',
         'Explorar el DOM',
         'Animaciones CSS',
       ],
