@@ -1,26 +1,20 @@
 // @ts-check
 const { themes } = require('prism-react-renderer');
 
-// Configuración adaptable para local y producción
-const isLocal = process.env.NODE_ENV !== 'production';
-const siteUrl = isLocal ? 'http://localhost' : 'https://tudominio.com';
-const baseUrl = isLocal ? '/' : '/docusaurus/'; // Ajusta '/docusaurus/' según tu subdirectorio en cPanel
-
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Manual del Inspector de elemento',
   tagline: 'Domina las herramientas de desarrollo del navegador',
   favicon: 'img/favicon.ico',
 
-  // Configuración dinámica de URL
-  url: siteUrl,
-  baseUrl: baseUrl,
+  url: 'http://localhost',
+  baseUrl: '/',
 
   // Configuración básica
-  organizationName: 'ANNDREW492', // Actualizado con tu usuario GitHub
+  organizationName: 'ANNDREW492', // Actualizado con tu usuario
   projectName: 'proyect_docusaurios', // Actualizado con tu repo
 
-  onBrokenLinks: isLocal ? 'warn' : 'throw', // Más estricto en producción
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   i18n: {
@@ -29,11 +23,13 @@ const config = {
   },
 
   themeConfig: {
+    image: 'img/logo-inspector.svg', // Imagen para redes sociales
+    
     navbar: {
       title: 'Manual del Inspector',
       logo: {
         alt: 'Logo del Inspector',
-        src: 'img/logo.svg',
+        src: 'img/logo-inspector.svg', // Ruta actualizada a tu nuevo logo
       },
       items: [
         {
@@ -42,19 +38,14 @@ const config = {
           position: 'left',
           label: 'Manual',
         },
-        // Opcional: añadir enlace a GitHub
-        {
-          href: 'https://github.com/ANNDREW492/proyect_docusaurios',
-          position: 'right',
-          className: 'header-github-link',
-          'aria-label': 'GitHub repository',
-        },
       ],
     },
+    
     footer: {
       style: 'dark',
       copyright: `Copyright © ${new Date().getFullYear()} - Manual del Inspector.`,
     },
+    
     prism: {
       theme: themes.github,
       darkTheme: themes.dracula,
@@ -76,19 +67,6 @@ const config = {
       },
     ],
   ],
-
-  // Configuración adicional para producción (opcional)
-  ...(!isLocal && {
-    plugins: [
-      [
-        '@docusaurus/plugin-sitemap',
-        {
-          changefreq: 'weekly',
-          priority: 0.5,
-        },
-      ],
-    ],
-  }),
 };
 
 module.exports = config;

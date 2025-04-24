@@ -16,4 +16,3 @@ Herramienta integrada en navegadores (Chrome, Firefox, Edge) para:
   - `Cmd + Opt + I` (Mac).
 - **Clic derecho** → "Inspeccionar" en cualquier elemento.
 
-![Abrir Inspector](img/abrir-inspector.png)
