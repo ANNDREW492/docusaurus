@@ -4,7 +4,7 @@ module.exports = {
       type: 'doc',
       id: 'intro',
       label: 'Inicio',
-      className: 'fa fa-home' // Icono opcional
+      className: 'fa fa-home',
     },
     {
       type: 'category',
@@ -13,7 +13,17 @@ module.exports = {
         'conceptos-basicos',
         'inspeccionar-elementos',
         'debug-css',
-        'trucos-avanzados'
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Trucos',
+      items: [
+        '(tips)1',
+        '(tips)2',
+        '(tips)3',
+        '(tips)4',
+        '(tips)5',
       ],
     },
   ],
