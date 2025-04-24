@@ -4,8 +4,8 @@ const config = {
   tagline: 'Domina las herramientas de desarrollo del navegador',
   favicon: 'img/favicon.ico',
 
-  url: 'http://localhost', // URL base para el sitio
-  baseUrl: '/', // Base URL para el sitio
+  url: 'https://ANNDREW492.github.io', // URL base para el sitio
+  baseUrl: '/proyect_docusaurios/', // Base URL para el sitio
 
   // Configuración básica
   organizationName: 'ANNDREW492', // Tu usuario de GitHub
