@@ -2,7 +2,7 @@
 
 /* 1. Variables de color y tipografía */
 :root {
-  --ifm-color-primary: #4e89e8; /* Azul profesional (puedes cambiarlo) */
+  --ifm-color-primary: #4e89e8; /* Azul profesional  */
   --ifm-color-primary-dark: #3078e6;
   --ifm-color-primary-darker: #216fe2;
   --ifm-font-family-base: 'Segoe UI', Roboto, sans-serif; /* Fuente más común */

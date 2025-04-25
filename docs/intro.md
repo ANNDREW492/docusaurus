@@ -17,11 +17,11 @@ El **Inspector de Elementos** es una herramienta indispensable para cualquier pe
 Este manual está estructurado en diferentes secciones que van desde los **conceptos básicos** hasta técnicas avanzadas para que puedas aprender de manera progresiva. Además, encontrarás **ejemplos prácticos** y **trucos** que te ayudarán a realizar ajustes rápidos en cualquier sitio web.
 
 ### 📚 Contenido del manual:
-- **[Conceptos Básicos](docs/conceptos-basicos)**: Comienza por entender cómo funciona el Inspector de Elementos.
-- **[Inspeccionar Elementos](docs/inspeccionar-elementos)**: Aprende cómo navegar por la estructura de una página y modificar los elementos.
-- **[Depuración de CSS](docs/debug-css)**: Descubre cómo depurar y probar estilos CSS en vivo.
-- **[Explorar el DOM](docs/explorar-dom)**: Analiza y manipula la estructura HTML con facilidad.
-- **[Animaciones CSS](docs/animaciones-css)**: Aprende a trabajar con animaciones y transiciones CSS.
+- **[Conceptos Básicos](conceptos-basicos.md)**: Comienza por entender cómo funciona el Inspector de Elementos.
+- **[Inspeccionar Elementos](inspeccionar-elementos)**: Aprende cómo navegar por la estructura de una página y modificar los elementos.
+- **[Depuración de CSS](debug-css)**: Descubre cómo depurar y probar estilos CSS en vivo.
+- **[Explorar el DOM](explorar-dom)**: Analiza y manipula la estructura HTML con facilidad.
+- **[Animaciones CSS](animaciones-css)**: Aprende a trabajar con animaciones y transiciones CSS.
 
 ### ⌨️ Atajos útiles
 A lo largo del manual, verás varios atajos que te ayudarán a trabajar de manera más eficiente con el Inspector de Elementos:
