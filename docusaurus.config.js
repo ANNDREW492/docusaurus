@@ -4,8 +4,8 @@ const config = {
   tagline: 'Domina las herramientas de desarrollo del navegador',
   favicon: 'favicon.ico',
 
-  url: 'https://997094779.facturalo.co/', // URL base para el sitio
-  baseUrl: '/proyect_docusaurios/', // Base URL para el sitio
+  url: 'https://ANNDREW492.github.io', // URL base para el sitio
+  baseUrl: '/docusaurus/', // Base URL para el sitio
 
   organizationName: 'ANNDREW492',
   projectName: 'proyect_docusaurios',
