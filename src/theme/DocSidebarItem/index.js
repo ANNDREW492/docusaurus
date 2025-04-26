@@ -3,19 +3,19 @@ import DefaultItem from '@theme-original/DocSidebarItem';
 import styles from './styles.module.css';
 
 const iconPaths = {
-  'Inicio': '/sidebar/intro.png',
-  'Guía': '/sidebar/inicio.png',
-  'fundamentos': '/sidebar/conceptos_basicos.png',
-  'Explorar el DOM': '/sidebar/explorar_dom.png',
-  'Inspeccion': '/sidebar/inspeccionar_elemento.png',
-  'Animaciones CSS': '/sidebar/animaciones.png',
-  'Depurar CSS': '/sidebar/debug.png',
-  'Trucos': '/sidebar/iconotips.png',
-  'tips1': '/sidebar/subtip.png',
-  'tips2': '/sidebar/subtip.png',
-  'tips3': '/sidebar/subtip.png',
-  'tips4': '/sidebar/subtip.png',
-  'tips5': '/sidebar/subtip.png',
+  'Inicio': '${baseUrl}/sidebar/intro.png',
+  'Guía': '${baseUrl}/sidebar/inicio.png',
+  'fundamentos': '${baseUrl}/sidebar/conceptos_basicos.png',
+  'Explorar el DOM': '${baseUrl}/sidebar/explorar_dom.png',
+  'Inspeccion': '${baseUrl}/sidebar/inspeccionar_elemento.png',
+  'Animaciones CSS': '${baseUrl}/sidebar/animaciones.png',
+  'Depurar CSS': '${baseUrl}/sidebar/debug.png',
+  'Trucos': '${baseUrl}/sidebar/iconotips.png',
+  'tips1': '${baseUrl}/sidebar/subtip.png',
+  'tips2': '${baseUrl}/sidebar/subtip.png',
+  'tips3': '${baseUrl}/sidebar/subtip.png',
+  'tips4': '${baseUrl}/sidebar/subtip.png',
+  'tips5': '${baseUrl}/sidebar/subtip.png',
 };
 
 export default function DocSidebarItem(props) {
