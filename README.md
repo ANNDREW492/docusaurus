@@ -2,7 +2,7 @@
 
 Este proyecto es acerca de la creación de un manual del inspector de navegador usando [Docusaurus](https://docusaurus.io/)
 el link del manual usando el domino de github es: 
-https://ANNDREW492.github.io/proyect_docusaurios/
+https://ANNDREW492.github.io/docusaurios/
 y el link a cpanel es:
 https://997094779.facturalo.co/proyect_docusaurios/
 ### Installation
