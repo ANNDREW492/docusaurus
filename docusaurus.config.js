@@ -8,7 +8,7 @@ const config = {
   baseUrl: '/docusaurus/', // Base URL para el sitio
 
   organizationName: 'ANNDREW492',
-  projectName: 'docusaurios',
+  projectName: 'docusaurus',
 
   presets: [
     [
