@@ -1,6 +1,7 @@
 ---
-id: tips3
+id: "tips3"
 title: Simular dispositivos móviles
+sidebar_label: "tips3"
 ---
 
 # Simular dispositivos móviles

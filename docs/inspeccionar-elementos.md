@@ -1,6 +1,7 @@
 ---
+id: "Inspeccion"
 title: "Inspeccionar Elementos"
-sidebar_label: "Inspección"
+sidebar_label: "Inspeccion"
 ---
 
 ## Seleccionar elementos

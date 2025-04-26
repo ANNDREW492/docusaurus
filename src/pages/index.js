@@ -9,7 +9,7 @@ export default function Home() {
       <main className={styles.hero}>
         <h1>Manual del Inspector de Elementos</h1>
         <p>Explora las herramientas de desarrollo del navegador</p>
-        <Link className="button button--primary" to="/docs/intro">
+        <Link className="button button--primary" to="/docs/Inicio">
           Ir al Manual
         </Link>
       </main>

@@ -2,16 +2,16 @@ module.exports = {
   manualSidebar: [
     {
       type: 'doc',
-      id: 'intro',
-      label: 'Inicio',
+      id: 'Inicio',
+      label: 'Inicio', // Coincide con 'Inicio' en iconPaths
       className: 'fa fa-home',
     },
     {
       type: 'category',
-      label: 'Guía',
+      label: 'Guía', // ok
       items: [
-        'conceptos-basicos',
-        'inspeccionar-elementos',
+        'fundamentos', 
+        'Inspeccion',
         'Depurar CSS',
         'Explorar el DOM',
         'Animaciones CSS',
@@ -19,9 +19,9 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Trucos',
+      label: 'Trucos', // Coincide con 'Trucos' en iconPaths
       items: [
-        'tips1',
+        'tips1', 
         'tips2',
         'tips3',
         'tips4',

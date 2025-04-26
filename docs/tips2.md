@@ -1,6 +1,7 @@
 ---
-id: tips2
+id: "tips2"
 title: Capturas de pantalla de página completa
+sidebar_label: "tips2"
 ---
 
 # Capturas de pantalla de página completa

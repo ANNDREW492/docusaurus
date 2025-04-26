@@ -1,4 +1,5 @@
 ---
+id: "Inicio"
 title: "Manual del Inspector de Elementos"
 sidebar_label: "Inicio"
 ---

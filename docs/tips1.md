@@ -1,6 +1,7 @@
 ---
-id: tips1
+id: "tips1"
 title: Cómo descargar videos con el Inspector
+sidebar_label: "tips1"
 ---
 
 # Cómo descargar videos con el Inspector

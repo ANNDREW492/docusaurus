@@ -1,6 +1,7 @@
 ---
-id: tips4
+id: "tips4"
 title: Editar texto temporalmente en cualquier página
+sidebar_label: "tips4"
 ---
 
 # Editar texto temporalmente en cualquier página

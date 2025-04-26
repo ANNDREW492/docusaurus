@@ -1,6 +1,7 @@
 ---
+id: "fundamentos"
 title: "Conceptos Básicos"
-sidebar_label: "Fundamentos"
+sidebar_label: "fundamentos"
 ---
 
 ## ¿Qué es el Inspector de Elementos?

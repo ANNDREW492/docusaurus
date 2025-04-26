@@ -19,7 +19,7 @@
 /* 3. Menú lateral */
 .sidebar {
   width: 320px !important;
-  border-right: 1px solid #eee;
+  border-right: 1px solid #8c82e2;
 }
 
 .menu__link {
@@ -43,5 +43,13 @@
 /* 5. Estilos para bloques de código */
 .prism-code {
   border-radius: 6px !important;
-  background: #f8f9fa !important;
+  background: #a1c3e6 !important;
+}
+.navbar {
+  background-color: #686f7c; /* azul medio (tailwind blue-500) */
+}
+
+/* Color del texto de los links */
+.navbar__link {
+  color: white;
 }

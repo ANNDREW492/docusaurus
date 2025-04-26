@@ -1,6 +1,7 @@
 ---
-id: tips5
+id: "tips5"
 title: Extraer paletas de color
+sidebar_label: "tips5"
 ---
 
 # Extraer paletas de color

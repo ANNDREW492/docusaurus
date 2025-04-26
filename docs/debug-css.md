@@ -1,7 +1,7 @@
 ---
 id: "Depurar CSS"
 title: "Depurar CSS"
-sidebar_label: "debug-css"
+sidebar_label: "Depurar CSS"
 ---
 
 # 🧪 Depuración de estilos CSS
