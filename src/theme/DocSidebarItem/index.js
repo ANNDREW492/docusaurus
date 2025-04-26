@@ -1,27 +1,28 @@
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import React from 'react';
 import DefaultItem from '@theme-original/DocSidebarItem';
 import styles from './styles.module.css';
 
-const iconPaths = {
-  'Inicio': `${baseUrl}/sidebar/intro.png`,
-  'Guía': `${baseUrl}/sidebar/inicio.png`,
-  'fundamentos': `${baseUrl}/sidebar/conceptos_basicos.png`,
-  'Explorar el DOM': `${baseUrl}/sidebar/explorar_dom.png`,
-  'Inspeccion': `${baseUrl}/sidebar/inspeccionar_elemento.png`,
-  'Animaciones CSS': `${baseUrl}/sidebar/animaciones.png`,
-  'Depurar CSS': `${baseUrl}/sidebar/debug.png`,
-  'Trucos': `${baseUrl}/sidebar/iconotips.png`,
-  'tips1': `${baseUrl}/sidebar/subtip.png`,
-  'tips2': `${baseUrl}/sidebar/subtip.png`,
-  'tips3': `${baseUrl}/sidebar/subtip.png`,
-  'tips4': `${baseUrl}/sidebar/subtip.png`,
-  'tips5': `${baseUrl}/sidebar/subtip.png`,
-};
-
 export default function DocSidebarItem(props) {
   const { item } = props;
-
   const label = item?.label;
+
+  const iconPaths = {
+    'Inicio': useBaseUrl('/sidebar/intro.png'),
+    'Guía': useBaseUrl('/sidebar/inicio.png'),
+    'Conceptos básicos': useBaseUrl('/sidebar/conceptos_basicos.png'),
+    'Explorar el DOM': useBaseUrl('/sidebar/explorar_dom.png'),
+    'Inspeccionar Elemento': useBaseUrl('/sidebar/inspeccionar_elemento.png'),
+    'Animaciones CSS': useBaseUrl('/sidebar/animaciones.png'),
+    'Depurar CSS': useBaseUrl('/sidebar/debug.png'),
+    'Trucos': useBaseUrl('/sidebar/iconotips.png'),
+    'tips1': useBaseUrl('/sidebar/subtip.png'),
+    'tips2': useBaseUrl('/sidebar/subtip.png'),
+    'tips3': useBaseUrl('/sidebar/subtip.png'),
+    'tips4': useBaseUrl('/sidebar/subtip.png'),
+    'tips5': useBaseUrl('/sidebar/subtip.png'),
+  };
+
   const icon = iconPaths[label];
 
   if (icon && label) {
