@@ -8,7 +8,7 @@ const config = {
   baseUrl: '/docusaurus/', // Base URL para el sitio
 
   organizationName: 'ANNDREW492',
-  projectName: 'proyect_docusaurios',
+  projectName: 'docusaurios',
 
   presets: [
     [
@@ -16,7 +16,7 @@ const config = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/ANNDREW492/proyect_docusaurios/tree/master',
+          editUrl: 'https://github.com/ANNDREW492/docusaurus/tree/master',
         },
         blog: false,
         theme: {
@@ -39,7 +39,7 @@ const config = {
       },
       items: [
         {
-          href: 'https://github.com/ANNDREW492/proyect_docusaurios',
+          href: 'https://github.com/ANNDREW492/docusaurus',
           label: 'GitHub',
           position: 'right',
         },
